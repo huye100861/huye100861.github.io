@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小学一年级算术训练APP（20以内）</title>
+    <style>
+      body{
+	   font-size: 30px ;
+	  }
+	  input{
+	   font-size: 1em ;
+	  }
+      input[button]{
+	   margin-right: 1em;
+	  }
+	  h1,div{
+	  text-align:center;
+	  }
+	  #answer{
+	  padding:20px;
+	  }
+    </style>
+</head>
+<body>
+  <h1>hello</h1> 
+  <div id = 'question'>
+    <input id = "opNum1" type = "text" readonly> 
+       <span id="op"> + </span> 
+    <input id = "opNum2" type = "text" readonly> 
+ </div>
+ <div id = 'answer'>
+   A. <input type="button"  value="	 " id = "answerA">
+   B. <input type="button"  value="	 " id = "answerB">
+   C. <input type="button"  value="	 " id = "answerC">
+   D. <input type="button"  value="	 " id = "answerD">
+ </div> 
+ </body>
+ <script type="text/javascript">
+ <!--
+ var a=Math.floor(Math.random() * 20);
+ document.getElementById('opNum1').value=a;
+ var b=Math.floor(Math.random() * 20);
+ document.getElementById('opNum2').value=b;
+ var c=a+b;
+ var A=Math.floor(Math.random() * 20);
+if((A+a)==c){document.getElementById('answerA').value=A+a+b;}
+else{document.getElementById('answerA').value=A+a;}
+var B=Math.floor(Math.random() * 20);
+if(B-a>0){document.getElementById('answerB').value=B-a;}
+else{document.getElementById('answerB').value=B+a;}
+var C=Math.floor(Math.random() * 20);
+if((C+b)==c){document.getElementById('answerC').value=C+b+c};
+else{document.getElementById('answerC').value=C+b}
+document.getElementById('answerC').value=C+b;
+document.getElementById('answerD').value=c;
+ //-->
+ </script>
+</html>
