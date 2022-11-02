@@ -45,15 +45,11 @@
  document.getElementById('opNum2').value=b;
  var c=a+b;
  var A=Math.floor(Math.random() * 20);
-if((A+a)==c){document.getElementById('answerA').value=A+a+b;}
-else{document.getElementById('answerA').value=A+a;}
+document.getElementById('answerA').value=A;
 var B=Math.floor(Math.random() * 20);
-if(B-a>0){document.getElementById('answerB').value=B-a;}
-else{document.getElementById('answerB').value=B+a;}
+document.getElementById('answerB').value=B;
 var C=Math.floor(Math.random() * 20);
-if((C+b)==c){document.getElementById('answerC').value=C+b+c};
-else{document.getElementById('answerC').value=C+b}
-document.getElementById('answerC').value=C+b;
+document.getElementById('answerC').value=C;
 document.getElementById('answerD').value=c;
  //-->
  </script>
